@@ -15,7 +15,7 @@ const CodeBlock = ({
   return (
     <div className='bg-white rounded-md'>
       <CodeBar lang={lang} codeRef={codeRef} />
-      <div className='p-4 overflow-y-auto'>
+      <div className='p-4 overflow-y-auto border border-gray-300 rounded-b-md'>
         <code ref={codeRef} className={`!whitespace-pre hljs language-${lang}`}>
           {codeChildren}
         </code>
